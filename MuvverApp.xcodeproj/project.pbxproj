@@ -17,6 +17,18 @@
 		06251A1828C68AAC008605F1 /* MuvverAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A1728C68AAC008605F1 /* MuvverAppUITests.swift */; };
 		06251A1A28C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */; };
 		069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BC28C6CB5700C3D716 /* Coordinator.swift */; };
+		069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */; };
+		069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227C128C6D67800C3D716 /* MenuTabBarController.swift */; };
+		069227CE28C6D82500C3D716 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227CD28C6D82500C3D716 /* HomeScreenViewController.swift */; };
+		069227D028C6D86200C3D716 /* NotificationsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227CF28C6D86200C3D716 /* NotificationsScreenViewController.swift */; };
+		069227D228C6D88500C3D716 /* ChatScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227D128C6D88500C3D716 /* ChatScreenViewController.swift */; };
+		069227D428C6D8AA00C3D716 /* RequestsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227D328C6D8AA00C3D716 /* RequestsScreenViewController.swift */; };
+		069227D628C6D8BB00C3D716 /* DeliveriesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227D528C6D8BB00C3D716 /* DeliveriesScreenViewController.swift */; };
+		069227DD28C6D9AC00C3D716 /* HomeScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227DC28C6D9AC00C3D716 /* HomeScreenCoordinator.swift */; };
+		069227DF28C6D9EB00C3D716 /* NotificationsScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227DE28C6D9EB00C3D716 /* NotificationsScreenCoordinator.swift */; };
+		069227E128C6DA1F00C3D716 /* ChatScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E028C6DA1F00C3D716 /* ChatScreenCoordinator.swift */; };
+		069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E228C6DA7A00C3D716 /* RequestsScreenCoordinator.swift */; };
+		069227E528C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E428C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,18 @@
 		06251A1728C68AAC008605F1 /* MuvverAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvverAppUITests.swift; sourceTree = "<group>"; };
 		06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvverAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		069227BC28C6CB5700C3D716 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		069227C128C6D67800C3D716 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
+		069227CD28C6D82500C3D716 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		069227CF28C6D86200C3D716 /* NotificationsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsScreenViewController.swift; sourceTree = "<group>"; };
+		069227D128C6D88500C3D716 /* ChatScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenViewController.swift; sourceTree = "<group>"; };
+		069227D328C6D8AA00C3D716 /* RequestsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsScreenViewController.swift; sourceTree = "<group>"; };
+		069227D528C6D8BB00C3D716 /* DeliveriesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesScreenViewController.swift; sourceTree = "<group>"; };
+		069227DC28C6D9AC00C3D716 /* HomeScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCoordinator.swift; sourceTree = "<group>"; };
+		069227DE28C6D9EB00C3D716 /* NotificationsScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsScreenCoordinator.swift; sourceTree = "<group>"; };
+		069227E028C6DA1F00C3D716 /* ChatScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenCoordinator.swift; sourceTree = "<group>"; };
+		069227E228C6DA7A00C3D716 /* RequestsScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsScreenCoordinator.swift; sourceTree = "<group>"; };
+		069227E428C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesScreenCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +174,7 @@
 		069227B928C6CB1D00C3D716 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				069227BE28C6D5FF00C3D716 /* TabBar */,
 				069227BB28C6CB4600C3D716 /* Protocols */,
 			);
 			path = Foundation;
@@ -158,6 +183,11 @@
 		069227BA28C6CB2500C3D716 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				069227C728C6D78C00C3D716 /* DeliveriesScreen */,
+				069227C628C6D75B00C3D716 /* RequestsScreen */,
+				069227C528C6D75400C3D716 /* ChatScreen */,
+				069227C428C6D74800C3D716 /* NotificationsScreen */,
+				069227C328C6D73400C3D716 /* HomeScreen */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -168,6 +198,140 @@
 				069227BC28C6CB5700C3D716 /* Coordinator.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		069227BE28C6D5FF00C3D716 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */,
+				069227C128C6D67800C3D716 /* MenuTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		069227C328C6D73400C3D716 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				069227DB28C6D97A00C3D716 /* Coordinator */,
+				069227C828C6D7B600C3D716 /* Presentation */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		069227C428C6D74800C3D716 /* NotificationsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				069227DA28C6D97700C3D716 /* Coordinator */,
+				069227C928C6D7C000C3D716 /* Presentation */,
+			);
+			path = NotificationsScreen;
+			sourceTree = "<group>";
+		};
+		069227C528C6D75400C3D716 /* ChatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				069227D928C6D97400C3D716 /* Coordinator */,
+				069227CA28C6D7C700C3D716 /* Presentation */,
+			);
+			path = ChatScreen;
+			sourceTree = "<group>";
+		};
+		069227C628C6D75B00C3D716 /* RequestsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				069227D828C6D96F00C3D716 /* Coordinator */,
+				069227CB28C6D7D400C3D716 /* Presentation */,
+			);
+			path = RequestsScreen;
+			sourceTree = "<group>";
+		};
+		069227C728C6D78C00C3D716 /* DeliveriesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				069227D728C6D96400C3D716 /* Coordinator */,
+				069227CC28C6D7DA00C3D716 /* Presentation */,
+			);
+			path = DeliveriesScreen;
+			sourceTree = "<group>";
+		};
+		069227C828C6D7B600C3D716 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				069227CD28C6D82500C3D716 /* HomeScreenViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		069227C928C6D7C000C3D716 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				069227CF28C6D86200C3D716 /* NotificationsScreenViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		069227CA28C6D7C700C3D716 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				069227D128C6D88500C3D716 /* ChatScreenViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		069227CB28C6D7D400C3D716 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				069227D328C6D8AA00C3D716 /* RequestsScreenViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		069227CC28C6D7DA00C3D716 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				069227D528C6D8BB00C3D716 /* DeliveriesScreenViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		069227D728C6D96400C3D716 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				069227E428C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		069227D828C6D96F00C3D716 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				069227E228C6DA7A00C3D716 /* RequestsScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		069227D928C6D97400C3D716 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				069227E028C6DA1F00C3D716 /* ChatScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		069227DA28C6D97700C3D716 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				069227DE28C6D9EB00C3D716 /* NotificationsScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		069227DB28C6D97A00C3D716 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				069227DC28C6D9AC00C3D716 /* HomeScreenCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,11 +464,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069227DD28C6D9AC00C3D716 /* HomeScreenCoordinator.swift in Sources */,
+				069227D228C6D88500C3D716 /* ChatScreenViewController.swift in Sources */,
 				062519FE28C68AAB008605F1 /* MuvverApp.xcdatamodeld in Sources */,
+				069227DF28C6D9EB00C3D716 /* NotificationsScreenCoordinator.swift in Sources */,
+				069227D628C6D8BB00C3D716 /* DeliveriesScreenViewController.swift in Sources */,
+				069227CE28C6D82500C3D716 /* HomeScreenViewController.swift in Sources */,
+				069227D428C6D8AA00C3D716 /* RequestsScreenViewController.swift in Sources */,
+				069227E128C6DA1F00C3D716 /* ChatScreenCoordinator.swift in Sources */,
 				062519F828C68AAB008605F1 /* ViewController.swift in Sources */,
+				069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */,
+				069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */,
 				069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */,
 				062519F428C68AAB008605F1 /* AppDelegate.swift in Sources */,
+				069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */,
 				062519F628C68AAB008605F1 /* SceneDelegate.swift in Sources */,
+				069227D028C6D86200C3D716 /* NotificationsScreenViewController.swift in Sources */,
+				069227E528C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
