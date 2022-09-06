@@ -29,6 +29,8 @@
 		069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E228C6DA7A00C3D716 /* RequestsScreenCoordinator.swift */; };
 		069227E528C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E428C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift */; };
 		069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E728C6E2F800C3D716 /* HomeScreenView.swift */; };
+		069227EB28C6F9F900C3D716 /* BlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227EA28C6F9F900C3D716 /* BlackBox.swift */; };
+		069227ED28C6FB3F00C3D716 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227EC28C6FB3F00C3D716 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		069227E228C6DA7A00C3D716 /* RequestsScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsScreenCoordinator.swift; sourceTree = "<group>"; };
 		069227E428C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesScreenCoordinator.swift; sourceTree = "<group>"; };
 		069227E728C6E2F800C3D716 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		069227EA28C6F9F900C3D716 /* BlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBox.swift; sourceTree = "<group>"; };
+		069227EC28C6FB3F00C3D716 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 		069227C328C6D73400C3D716 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				069227E928C6F9E300C3D716 /* Component */,
 				069227DB28C6D97A00C3D716 /* Coordinator */,
 				069227C828C6D7B600C3D716 /* Presentation */,
 			);
@@ -342,6 +347,15 @@
 			path = UnusedBarItems;
 			sourceTree = "<group>";
 		};
+		069227E928C6F9E300C3D716 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				069227EA28C6F9F900C3D716 /* BlackBox.swift */,
+				069227EC28C6FB3F00C3D716 /* GradientView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -472,11 +486,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069227ED28C6FB3F00C3D716 /* GradientView.swift in Sources */,
 				069227DD28C6D9AC00C3D716 /* HomeScreenCoordinator.swift in Sources */,
 				069227D228C6D88500C3D716 /* ChatScreenViewController.swift in Sources */,
 				062519FE28C68AAB008605F1 /* MuvverApp.xcdatamodeld in Sources */,
 				069227DF28C6D9EB00C3D716 /* NotificationsScreenCoordinator.swift in Sources */,
 				069227D628C6D8BB00C3D716 /* DeliveriesScreenViewController.swift in Sources */,
+				069227EB28C6F9F900C3D716 /* BlackBox.swift in Sources */,
 				069227CE28C6D82500C3D716 /* HomeScreenViewController.swift in Sources */,
 				069227D428C6D8AA00C3D716 /* RequestsScreenViewController.swift in Sources */,
 				069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */,
