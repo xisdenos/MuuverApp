@@ -16,6 +16,7 @@
 		06251A0E28C68AAC008605F1 /* MuvverAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A0D28C68AAC008605F1 /* MuvverAppTests.swift */; };
 		06251A1828C68AAC008605F1 /* MuvverAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A1728C68AAC008605F1 /* MuvverAppUITests.swift */; };
 		06251A1A28C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */; };
+		069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BC28C6CB5700C3D716 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		06251A1328C68AAC008605F1 /* MuvverAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuvverAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06251A1728C68AAC008605F1 /* MuvverAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvverAppUITests.swift; sourceTree = "<group>"; };
 		06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvverAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		069227BC28C6CB5700C3D716 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +101,9 @@
 		062519F228C68AAB008605F1 /* MuvverApp */ = {
 			isa = PBXGroup;
 			children = (
-				062519F328C68AAB008605F1 /* AppDelegate.swift */,
-				062519F528C68AAB008605F1 /* SceneDelegate.swift */,
+				069227B828C6CB1500C3D716 /* Source */,
+				069227B728C6CAD400C3D716 /* App */,
 				062519F728C68AAB008605F1 /* ViewController.swift */,
-				062519FF28C68AAC008605F1 /* Assets.xcassets */,
-				06251A0128C68AAC008605F1 /* LaunchScreen.storyboard */,
 				06251A0428C68AAC008605F1 /* Info.plist */,
 				062519FC28C68AAB008605F1 /* MuvverApp.xcdatamodeld */,
 			);
@@ -125,6 +125,49 @@
 				06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */,
 			);
 			path = MuvverAppUITests;
+			sourceTree = "<group>";
+		};
+		069227B728C6CAD400C3D716 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				062519F328C68AAB008605F1 /* AppDelegate.swift */,
+				06251A0128C68AAC008605F1 /* LaunchScreen.storyboard */,
+				062519FF28C68AAC008605F1 /* Assets.xcassets */,
+				062519F528C68AAB008605F1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		069227B828C6CB1500C3D716 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				069227BA28C6CB2500C3D716 /* Product */,
+				069227B928C6CB1D00C3D716 /* Foundation */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		069227B928C6CB1D00C3D716 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				069227BB28C6CB4600C3D716 /* Protocols */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		069227BA28C6CB2500C3D716 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		069227BB28C6CB4600C3D716 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				069227BC28C6CB5700C3D716 /* Coordinator.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +302,7 @@
 			files = (
 				062519FE28C68AAB008605F1 /* MuvverApp.xcdatamodeld in Sources */,
 				062519F828C68AAB008605F1 /* ViewController.swift in Sources */,
+				069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */,
 				062519F428C68AAB008605F1 /* AppDelegate.swift in Sources */,
 				062519F628C68AAB008605F1 /* SceneDelegate.swift in Sources */,
 			);
