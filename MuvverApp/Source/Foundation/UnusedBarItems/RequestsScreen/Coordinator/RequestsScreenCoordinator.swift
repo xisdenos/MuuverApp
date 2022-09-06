@@ -1,5 +1,5 @@
 //
-//  DeliveriesScreenCoordinator.swift
+//  RequestsScreenCoordinator.swift
 //  MuvverApp
 //
 //  Created by Lucas Pinto on 05/09/22.
@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-class FavoriteMovieCoordinator: Coordinator {
+class RequestsScreenCoordinator: Coordinator {
     var navigationController: UINavigationController
-    var homeViewController: DeliveriesScreenViewController = {
-        let viewController = DeliveriesScreenViewController()
-        viewController.tabBarItem.image = UIImage(systemName: "suit.heart")
-        viewController.title = "Home"
+    var homeViewController: RequestsScreenViewController = {
+        let viewController = RequestsScreenViewController()
+        viewController.tabBarItem.image = UIImage(systemName: "tag.fill")
+        viewController.title = "Pedidos"
         return viewController
     }()
     

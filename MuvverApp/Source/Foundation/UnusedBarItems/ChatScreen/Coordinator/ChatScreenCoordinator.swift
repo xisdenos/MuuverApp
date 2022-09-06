@@ -1,5 +1,5 @@
 //
-//  RequestsScreenCoordinator.swift
+//  NotificationsScreenCoordinator.swift
 //  MuvverApp
 //
 //  Created by Lucas Pinto on 05/09/22.
@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-class RequestsScreenCoordinator: Coordinator {
+class ChatScreenCoordinator: Coordinator {
     var navigationController: UINavigationController
-    var homeViewController: RequestsScreenViewController = {
-        let viewController = RequestsScreenViewController()
-        viewController.tabBarItem.image = UIImage(systemName: "suit.heart")
-        viewController.title = "Home"
+    var homeViewController: ChatScreenViewController = {
+        let viewController = ChatScreenViewController()
+        viewController.tabBarItem.image = UIImage(systemName: "bubble.left.fill")
+        viewController.title = "Chat"
         return viewController
     }()
     

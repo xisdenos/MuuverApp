@@ -16,6 +16,21 @@ class MenuTabBar: Coordinator {
         self.navigationController = navigationController
     }
     
-    //Unused function because tabbar
-    func start() {}
+    
+    func start() {
+        let homeScreenCoordinator = HomeScreenCoordinator(navigationController: navigationController)
+        let notificationsScreenCoordinator = NotificationsScreenCoordinator(navigationController: navigationController)
+        let chatScreenCoordinator = ChatScreenCoordinator(navigationController: navigationController)
+        let requestScreenCoordinator = RequestsScreenCoordinator(navigationController: navigationController)
+        let deliveriesScreenCoordinator = DeliveriesScreenCoordinator(navigationController: navigationController)
+        
+        let menuTabBarViewController = MenuTabBarController()
+        menuTabBarViewController.setViewControllers([homeScreenCoordinator.homeViewController,
+                                                     notificationsScreenCoordinator.homeViewController,
+                                                     chatScreenCoordinator.homeViewController,
+                                                     requestScreenCoordinator.homeViewController,
+                                                     deliveriesScreenCoordinator.homeViewController],
+                                                     animated: true)
+        self.navigationController.pushViewController(menuTabBarViewController, animated: true)
+    }
 }

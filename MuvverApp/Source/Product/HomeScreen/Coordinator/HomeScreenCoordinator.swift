@@ -10,10 +10,11 @@ import UIKit
 
 class HomeScreenCoordinator: Coordinator {
     var navigationController: UINavigationController
+
     var homeViewController: HomeScreenViewController = {
         let viewController = HomeScreenViewController()
-        viewController.tabBarItem.image = UIImage(systemName: "suit.heart")
-        viewController.title = "Home"
+        viewController.tabBarItem.image = UIImage(systemName: "house.fill")
+        viewController.title = "Início"
         return viewController
     }()
     
@@ -21,9 +22,7 @@ class HomeScreenCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
-    func start() {
-        
-    }
+    func start() {}
     
     
 }

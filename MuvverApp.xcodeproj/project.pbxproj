@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		062519F428C68AAB008605F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062519F328C68AAB008605F1 /* AppDelegate.swift */; };
 		062519F628C68AAB008605F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062519F528C68AAB008605F1 /* SceneDelegate.swift */; };
-		062519F828C68AAB008605F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062519F728C68AAB008605F1 /* ViewController.swift */; };
 		062519FE28C68AAB008605F1 /* MuvverApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 062519FC28C68AAB008605F1 /* MuvverApp.xcdatamodeld */; };
 		06251A0028C68AAC008605F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062519FF28C68AAC008605F1 /* Assets.xcassets */; };
 		06251A0328C68AAC008605F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06251A0128C68AAC008605F1 /* LaunchScreen.storyboard */; };
@@ -29,6 +28,7 @@
 		069227E128C6DA1F00C3D716 /* ChatScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E028C6DA1F00C3D716 /* ChatScreenCoordinator.swift */; };
 		069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E228C6DA7A00C3D716 /* RequestsScreenCoordinator.swift */; };
 		069227E528C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E428C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift */; };
+		069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E728C6E2F800C3D716 /* HomeScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 		062519F028C68AAB008605F1 /* MuvverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuvverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062519F328C68AAB008605F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		062519F528C68AAB008605F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		062519F728C68AAB008605F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		062519FD28C68AAB008605F1 /* MuvverApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MuvverApp.xcdatamodel; sourceTree = "<group>"; };
 		062519FF28C68AAC008605F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06251A0228C68AAC008605F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		069227E028C6DA1F00C3D716 /* ChatScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenCoordinator.swift; sourceTree = "<group>"; };
 		069227E228C6DA7A00C3D716 /* RequestsScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsScreenCoordinator.swift; sourceTree = "<group>"; };
 		069227E428C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesScreenCoordinator.swift; sourceTree = "<group>"; };
+		069227E728C6E2F800C3D716 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,6 @@
 			children = (
 				069227B828C6CB1500C3D716 /* Source */,
 				069227B728C6CAD400C3D716 /* App */,
-				062519F728C68AAB008605F1 /* ViewController.swift */,
 				06251A0428C68AAC008605F1 /* Info.plist */,
 				062519FC28C68AAB008605F1 /* MuvverApp.xcdatamodeld */,
 			);
@@ -174,6 +173,7 @@
 		069227B928C6CB1D00C3D716 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				069227E628C6E19500C3D716 /* UnusedBarItems */,
 				069227BE28C6D5FF00C3D716 /* TabBar */,
 				069227BB28C6CB4600C3D716 /* Protocols */,
 			);
@@ -183,10 +183,6 @@
 		069227BA28C6CB2500C3D716 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				069227C728C6D78C00C3D716 /* DeliveriesScreen */,
-				069227C628C6D75B00C3D716 /* RequestsScreen */,
-				069227C528C6D75400C3D716 /* ChatScreen */,
-				069227C428C6D74800C3D716 /* NotificationsScreen */,
 				069227C328C6D73400C3D716 /* HomeScreen */,
 			);
 			path = Product;
@@ -258,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				069227CD28C6D82500C3D716 /* HomeScreenViewController.swift */,
+				069227E728C6E2F800C3D716 /* HomeScreenView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -332,6 +329,17 @@
 				069227DC28C6D9AC00C3D716 /* HomeScreenCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		069227E628C6E19500C3D716 /* UnusedBarItems */ = {
+			isa = PBXGroup;
+			children = (
+				069227C728C6D78C00C3D716 /* DeliveriesScreen */,
+				069227C628C6D75B00C3D716 /* RequestsScreen */,
+				069227C528C6D75400C3D716 /* ChatScreen */,
+				069227C428C6D74800C3D716 /* NotificationsScreen */,
+			);
+			path = UnusedBarItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,8 +479,8 @@
 				069227D628C6D8BB00C3D716 /* DeliveriesScreenViewController.swift in Sources */,
 				069227CE28C6D82500C3D716 /* HomeScreenViewController.swift in Sources */,
 				069227D428C6D8AA00C3D716 /* RequestsScreenViewController.swift in Sources */,
+				069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */,
 				069227E128C6DA1F00C3D716 /* ChatScreenCoordinator.swift in Sources */,
-				062519F828C68AAB008605F1 /* ViewController.swift in Sources */,
 				069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */,
 				069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */,
 				069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */,

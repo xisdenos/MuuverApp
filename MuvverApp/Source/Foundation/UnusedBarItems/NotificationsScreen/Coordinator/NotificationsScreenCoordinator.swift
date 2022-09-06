@@ -12,8 +12,8 @@ class NotificationsScreenCoordinator: Coordinator {
     var navigationController: UINavigationController
     var homeViewController: NotificationsScreenViewController = {
         let viewController = NotificationsScreenViewController()
-        viewController.tabBarItem.image = UIImage(systemName: "suit.heart")
-        viewController.title = "Home"
+        viewController.tabBarItem.image = UIImage(systemName: "bell.fill")
+        viewController.title = "Notificações"
         return viewController
     }()
     

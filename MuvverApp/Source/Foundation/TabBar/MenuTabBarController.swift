@@ -8,13 +8,14 @@
 import Foundation
 import UIKit
 
-final class MeuTabBarController: UITabBarController {
+final class MenuTabBarController: UITabBarController {
     
     override func setViewControllers(_ viewControllers: [UIViewController]?, animated: Bool) {
         super.setViewControllers(viewControllers, animated: animated)
         
-        tabBar.tintColor = .blue
+        tabBar.tintColor = .gray
         tabBar.isTranslucent = false
+        tabBar.backgroundColor = .systemBackground
         UITabBar.appearance().barTintColor = .green
     }
 }
