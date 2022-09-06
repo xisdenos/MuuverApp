@@ -10,12 +10,18 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
     
+    var homeScreenView: HomeScreenView = HomeScreenView()
+    
     override func loadView() {
         super.loadView()
-        view.backgroundColor = .blue
+        self.view = homeScreenView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
