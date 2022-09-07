@@ -10,9 +10,15 @@ import UIKit
 
 class SelectTransportScreenViewController: UIViewController {
     
+    var selectTransportScreenView: SelectTransportScreenView = SelectTransportScreenView()
+    
+    override func loadView() {
+        self.view = selectTransportScreenView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .brown
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

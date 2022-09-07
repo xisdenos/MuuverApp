@@ -17,6 +17,8 @@
 		06251A1A28C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */; };
 		066161CB28C92307009799A5 /* SelectTransportScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161CA28C92307009799A5 /* SelectTransportScreenViewController.swift */; };
 		066161CE28C9239A009799A5 /* SelectTransportScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161CD28C9239A009799A5 /* SelectTransportScreenCoordinator.swift */; };
+		066161D028C94B01009799A5 /* SelectTransportScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161CF28C94B01009799A5 /* SelectTransportScreenView.swift */; };
+		066161D328C94EAF009799A5 /* BlackGradientNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */; };
 		069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BC28C6CB5700C3D716 /* Coordinator.swift */; };
 		069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */; };
 		069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227C128C6D67800C3D716 /* MenuTabBarController.swift */; };
@@ -67,6 +69,8 @@
 		06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvverAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		066161CA28C92307009799A5 /* SelectTransportScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportScreenViewController.swift; sourceTree = "<group>"; };
 		066161CD28C9239A009799A5 /* SelectTransportScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportScreenCoordinator.swift; sourceTree = "<group>"; };
+		066161CF28C94B01009799A5 /* SelectTransportScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportScreenView.swift; sourceTree = "<group>"; };
+		066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackGradientNavigation.swift; sourceTree = "<group>"; };
 		069227BC28C6CB5700C3D716 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		069227C128C6D67800C3D716 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				066161CA28C92307009799A5 /* SelectTransportScreenViewController.swift */,
+				066161CF28C94B01009799A5 /* SelectTransportScreenView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -181,6 +186,15 @@
 				066161CD28C9239A009799A5 /* SelectTransportScreenCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		066161D128C94CF7009799A5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				069227EC28C6FB3F00C3D716 /* GradientView.swift */,
+				066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		069227B728C6CAD400C3D716 /* App */ = {
@@ -206,6 +220,7 @@
 		069227B928C6CB1D00C3D716 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				066161D128C94CF7009799A5 /* Components */,
 				069227E628C6E19500C3D716 /* UnusedBarItems */,
 				069227BE28C6D5FF00C3D716 /* TabBar */,
 				069227BB28C6CB4600C3D716 /* Protocols */,
@@ -381,7 +396,6 @@
 			isa = PBXGroup;
 			children = (
 				069227EA28C6F9F900C3D716 /* BlackBox.swift */,
-				069227EC28C6FB3F00C3D716 /* GradientView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -524,8 +538,10 @@
 				069227D628C6D8BB00C3D716 /* DeliveriesScreenViewController.swift in Sources */,
 				069227EB28C6F9F900C3D716 /* BlackBox.swift in Sources */,
 				069227CE28C6D82500C3D716 /* HomeScreenViewController.swift in Sources */,
+				066161D328C94EAF009799A5 /* BlackGradientNavigation.swift in Sources */,
 				069227D428C6D8AA00C3D716 /* RequestsScreenViewController.swift in Sources */,
 				069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */,
+				066161D028C94B01009799A5 /* SelectTransportScreenView.swift in Sources */,
 				069227E128C6DA1F00C3D716 /* ChatScreenCoordinator.swift in Sources */,
 				069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */,
 				069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */,
