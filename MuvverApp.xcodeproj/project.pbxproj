@@ -15,6 +15,8 @@
 		06251A0E28C68AAC008605F1 /* MuvverAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A0D28C68AAC008605F1 /* MuvverAppTests.swift */; };
 		06251A1828C68AAC008605F1 /* MuvverAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A1728C68AAC008605F1 /* MuvverAppUITests.swift */; };
 		06251A1A28C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */; };
+		066161CB28C92307009799A5 /* SelectTransportScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161CA28C92307009799A5 /* SelectTransportScreenViewController.swift */; };
+		066161CE28C9239A009799A5 /* SelectTransportScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161CD28C9239A009799A5 /* SelectTransportScreenCoordinator.swift */; };
 		069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BC28C6CB5700C3D716 /* Coordinator.swift */; };
 		069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */; };
 		069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227C128C6D67800C3D716 /* MenuTabBarController.swift */; };
@@ -63,6 +65,8 @@
 		06251A1328C68AAC008605F1 /* MuvverAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuvverAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06251A1728C68AAC008605F1 /* MuvverAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvverAppUITests.swift; sourceTree = "<group>"; };
 		06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvverAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		066161CA28C92307009799A5 /* SelectTransportScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportScreenViewController.swift; sourceTree = "<group>"; };
+		066161CD28C9239A009799A5 /* SelectTransportScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportScreenCoordinator.swift; sourceTree = "<group>"; };
 		069227BC28C6CB5700C3D716 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		069227C128C6D67800C3D716 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
@@ -154,6 +158,31 @@
 			path = MuvverAppUITests;
 			sourceTree = "<group>";
 		};
+		066161C828C922C7009799A5 /* SelectTransportScreen */ = {
+			isa = PBXGroup;
+			children = (
+				066161CC28C92385009799A5 /* Coordinator */,
+				066161C928C922ED009799A5 /* Presentation */,
+			);
+			path = SelectTransportScreen;
+			sourceTree = "<group>";
+		};
+		066161C928C922ED009799A5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				066161CA28C92307009799A5 /* SelectTransportScreenViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		066161CC28C92385009799A5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				066161CD28C9239A009799A5 /* SelectTransportScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		069227B728C6CAD400C3D716 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +216,7 @@
 		069227BA28C6CB2500C3D716 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				066161C828C922C7009799A5 /* SelectTransportScreen */,
 				069227C328C6D73400C3D716 /* HomeScreen */,
 			);
 			path = Product;
@@ -502,7 +532,9 @@
 				069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */,
 				062519F428C68AAB008605F1 /* AppDelegate.swift in Sources */,
 				069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */,
+				066161CE28C9239A009799A5 /* SelectTransportScreenCoordinator.swift in Sources */,
 				062519F628C68AAB008605F1 /* SceneDelegate.swift in Sources */,
+				066161CB28C92307009799A5 /* SelectTransportScreenViewController.swift in Sources */,
 				069227D028C6D86200C3D716 /* NotificationsScreenViewController.swift in Sources */,
 				069227E528C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift in Sources */,
 			);
