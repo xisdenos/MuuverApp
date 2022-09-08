@@ -22,6 +22,8 @@
 		066161D328C94EAF009799A5 /* BlackGradientNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */; };
 		066161D528C95C4A009799A5 /* NextScreenGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D428C95C4A009799A5 /* NextScreenGreenButton.swift */; };
 		066161D728C98665009799A5 /* SelectTransportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D628C98665009799A5 /* SelectTransportTableViewCell.swift */; };
+		066AB34528CA937B00171CD5 /* TravelInfoScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066AB34428CA937B00171CD5 /* TravelInfoScreenCoordinator.swift */; };
+		066AB34728CA93D200171CD5 /* TravelInfoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066AB34628CA93D200171CD5 /* TravelInfoScreenViewController.swift */; };
 		069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BC28C6CB5700C3D716 /* Coordinator.swift */; };
 		069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */; };
 		069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227C128C6D67800C3D716 /* MenuTabBarController.swift */; };
@@ -77,6 +79,8 @@
 		066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackGradientNavigation.swift; sourceTree = "<group>"; };
 		066161D428C95C4A009799A5 /* NextScreenGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScreenGreenButton.swift; sourceTree = "<group>"; };
 		066161D628C98665009799A5 /* SelectTransportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportTableViewCell.swift; sourceTree = "<group>"; };
+		066AB34428CA937B00171CD5 /* TravelInfoScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoScreenCoordinator.swift; sourceTree = "<group>"; };
+		066AB34628CA93D200171CD5 /* TravelInfoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoScreenViewController.swift; sourceTree = "<group>"; };
 		069227BC28C6CB5700C3D716 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		069227C128C6D67800C3D716 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
@@ -214,6 +218,31 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		066AB34128CA932500171CD5 /* TravelInfoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				066AB34328CA936900171CD5 /* Coordinator */,
+				066AB34228CA936000171CD5 /* Presentation */,
+			);
+			path = TravelInfoScreen;
+			sourceTree = "<group>";
+		};
+		066AB34228CA936000171CD5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				066AB34628CA93D200171CD5 /* TravelInfoScreenViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		066AB34328CA936900171CD5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				066AB34428CA937B00171CD5 /* TravelInfoScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		069227B728C6CAD400C3D716 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +277,7 @@
 		069227BA28C6CB2500C3D716 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				066AB34128CA932500171CD5 /* TravelInfoScreen */,
 				066161C828C922C7009799A5 /* SelectTransportScreen */,
 				069227C328C6D73400C3D716 /* HomeScreen */,
 			);
@@ -561,11 +591,13 @@
 				069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */,
 				064B433F28C98EA8003EBAD4 /* SelectTransportScreenViewModel.swift in Sources */,
 				066161D028C94B01009799A5 /* SelectTransportScreenView.swift in Sources */,
+				066AB34528CA937B00171CD5 /* TravelInfoScreenCoordinator.swift in Sources */,
 				066161D728C98665009799A5 /* SelectTransportTableViewCell.swift in Sources */,
 				069227E128C6DA1F00C3D716 /* ChatScreenCoordinator.swift in Sources */,
 				069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */,
 				069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */,
 				069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */,
+				066AB34728CA93D200171CD5 /* TravelInfoScreenViewController.swift in Sources */,
 				062519F428C68AAB008605F1 /* AppDelegate.swift in Sources */,
 				069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */,
 				066161CE28C9239A009799A5 /* SelectTransportScreenCoordinator.swift in Sources */,
