@@ -8,10 +8,19 @@
 import Foundation
 import UIKit
 
-class HomeScreenView: UIView {
+protocol HomeScreenProtocol: AnyObject {
+    func actionSecondBlackBox()
+}
+
+final class HomeScreenView: UIView {
+    
+    private weak var delegate: HomeScreenProtocol?
+    
+    func delegate(delegate: HomeScreenProtocol) {
+        self.delegate = delegate
+    }
     
     //MARK: - Components
-    
     //Top Itens
     lazy var logoImageView: UIImageView = {
         let image = UIImageView()
@@ -79,9 +88,9 @@ class HomeScreenView: UIView {
     lazy var secondBlackBox: UIView = {
         let view = BlackBox(title: "Viajante", description: "Vai viajar pra onde?", imageName: "blueTruck")
         view.translatesAutoresizingMaskIntoConstraints = false
+        
         return view
     }()
-    
     //MARK: - Initializer
     
     override init(frame: CGRect) {
@@ -89,6 +98,7 @@ class HomeScreenView: UIView {
         self.backgroundColor = .white
         configureSuperView()
         configConstraints()
+        secondBlackBoxTapped()
     }
     
     required init?(coder: NSCoder) {
@@ -104,6 +114,18 @@ class HomeScreenView: UIView {
         addSubview(blackBox)
         addSubview(secondBlackBox)
     }
+    
+    //MARK: - tap functions
+    
+    private func secondBlackBoxTapped() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        secondBlackBox.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+        self.delegate?.actionSecondBlackBox()
+    }
+    
     
     //MARK: - Constraints
     

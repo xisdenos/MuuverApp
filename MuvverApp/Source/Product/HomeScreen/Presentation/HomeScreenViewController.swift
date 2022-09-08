@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class HomeScreenViewController: UIViewController {
+    var travelerNextScreen: (() -> Void)?
     
     var homeScreenView: HomeScreenView = HomeScreenView()
     
@@ -19,9 +20,18 @@ class HomeScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.homeScreenView.delegate(delegate: self)
     }
     
+    //Hide navigation back button
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+}
+
+    //Navigation protocol
+extension HomeScreenViewController: HomeScreenProtocol {
+    func actionSecondBlackBox() {
+        travelerNextScreen?()
     }
 }

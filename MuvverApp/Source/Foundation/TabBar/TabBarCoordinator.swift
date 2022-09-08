@@ -16,9 +16,9 @@ class MenuTabBar: Coordinator {
         self.navigationController = navigationController
     }
     
-    
     func start() {
         let homeScreenCoordinator = HomeScreenCoordinator(navigationController: navigationController)
+        homeScreenCoordinator.start()
         let notificationsScreenCoordinator = NotificationsScreenCoordinator(navigationController: navigationController)
         let chatScreenCoordinator = ChatScreenCoordinator(navigationController: navigationController)
         let requestScreenCoordinator = RequestsScreenCoordinator(navigationController: navigationController)

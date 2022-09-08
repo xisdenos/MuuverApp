@@ -22,7 +22,14 @@ class HomeScreenCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
-    func start() {}
-    
-    
+    func start() {
+        homeViewController.travelerNextScreen = {
+            self.startSelectTransportScreen()
+        }
+    }
+    func startSelectTransportScreen() {
+        let coordinator: SelectTransportScreenCordinator = SelectTransportScreenCordinator(navigationController: navigationController)
+        coordinator.start()
+    }
+
 }

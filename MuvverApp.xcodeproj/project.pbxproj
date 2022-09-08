@@ -15,6 +15,13 @@
 		06251A0E28C68AAC008605F1 /* MuvverAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A0D28C68AAC008605F1 /* MuvverAppTests.swift */; };
 		06251A1828C68AAC008605F1 /* MuvverAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A1728C68AAC008605F1 /* MuvverAppUITests.swift */; };
 		06251A1A28C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */; };
+		064B433F28C98EA8003EBAD4 /* SelectTransportScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B433E28C98EA8003EBAD4 /* SelectTransportScreenViewModel.swift */; };
+		066161CB28C92307009799A5 /* SelectTransportScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161CA28C92307009799A5 /* SelectTransportScreenViewController.swift */; };
+		066161CE28C9239A009799A5 /* SelectTransportScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161CD28C9239A009799A5 /* SelectTransportScreenCoordinator.swift */; };
+		066161D028C94B01009799A5 /* SelectTransportScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161CF28C94B01009799A5 /* SelectTransportScreenView.swift */; };
+		066161D328C94EAF009799A5 /* BlackGradientNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */; };
+		066161D528C95C4A009799A5 /* NextScreenGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D428C95C4A009799A5 /* NextScreenGreenButton.swift */; };
+		066161D728C98665009799A5 /* SelectTransportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D628C98665009799A5 /* SelectTransportTableViewCell.swift */; };
 		069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BC28C6CB5700C3D716 /* Coordinator.swift */; };
 		069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */; };
 		069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227C128C6D67800C3D716 /* MenuTabBarController.swift */; };
@@ -63,6 +70,13 @@
 		06251A1328C68AAC008605F1 /* MuvverAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuvverAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06251A1728C68AAC008605F1 /* MuvverAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvverAppUITests.swift; sourceTree = "<group>"; };
 		06251A1928C68AAC008605F1 /* MuvverAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvverAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		064B433E28C98EA8003EBAD4 /* SelectTransportScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportScreenViewModel.swift; sourceTree = "<group>"; };
+		066161CA28C92307009799A5 /* SelectTransportScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportScreenViewController.swift; sourceTree = "<group>"; };
+		066161CD28C9239A009799A5 /* SelectTransportScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportScreenCoordinator.swift; sourceTree = "<group>"; };
+		066161CF28C94B01009799A5 /* SelectTransportScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportScreenView.swift; sourceTree = "<group>"; };
+		066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackGradientNavigation.swift; sourceTree = "<group>"; };
+		066161D428C95C4A009799A5 /* NextScreenGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScreenGreenButton.swift; sourceTree = "<group>"; };
+		066161D628C98665009799A5 /* SelectTransportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportTableViewCell.swift; sourceTree = "<group>"; };
 		069227BC28C6CB5700C3D716 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		069227C128C6D67800C3D716 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
@@ -154,6 +168,52 @@
 			path = MuvverAppUITests;
 			sourceTree = "<group>";
 		};
+		066161C828C922C7009799A5 /* SelectTransportScreen */ = {
+			isa = PBXGroup;
+			children = (
+				066161CC28C92385009799A5 /* Coordinator */,
+				066161C928C922ED009799A5 /* Presentation */,
+			);
+			path = SelectTransportScreen;
+			sourceTree = "<group>";
+		};
+		066161C928C922ED009799A5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				066161D828C98673009799A5 /* Cell */,
+				066161CA28C92307009799A5 /* SelectTransportScreenViewController.swift */,
+				066161CF28C94B01009799A5 /* SelectTransportScreenView.swift */,
+				064B433E28C98EA8003EBAD4 /* SelectTransportScreenViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		066161CC28C92385009799A5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				066161CD28C9239A009799A5 /* SelectTransportScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		066161D128C94CF7009799A5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				069227EC28C6FB3F00C3D716 /* GradientView.swift */,
+				066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */,
+				066161D428C95C4A009799A5 /* NextScreenGreenButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		066161D828C98673009799A5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				066161D628C98665009799A5 /* SelectTransportTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		069227B728C6CAD400C3D716 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +237,7 @@
 		069227B928C6CB1D00C3D716 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				066161D128C94CF7009799A5 /* Components */,
 				069227E628C6E19500C3D716 /* UnusedBarItems */,
 				069227BE28C6D5FF00C3D716 /* TabBar */,
 				069227BB28C6CB4600C3D716 /* Protocols */,
@@ -187,6 +248,7 @@
 		069227BA28C6CB2500C3D716 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				066161C828C922C7009799A5 /* SelectTransportScreen */,
 				069227C328C6D73400C3D716 /* HomeScreen */,
 			);
 			path = Product;
@@ -351,7 +413,6 @@
 			isa = PBXGroup;
 			children = (
 				069227EA28C6F9F900C3D716 /* BlackBox.swift */,
-				069227EC28C6FB3F00C3D716 /* GradientView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -494,15 +555,22 @@
 				069227D628C6D8BB00C3D716 /* DeliveriesScreenViewController.swift in Sources */,
 				069227EB28C6F9F900C3D716 /* BlackBox.swift in Sources */,
 				069227CE28C6D82500C3D716 /* HomeScreenViewController.swift in Sources */,
+				066161D328C94EAF009799A5 /* BlackGradientNavigation.swift in Sources */,
 				069227D428C6D8AA00C3D716 /* RequestsScreenViewController.swift in Sources */,
+				066161D528C95C4A009799A5 /* NextScreenGreenButton.swift in Sources */,
 				069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */,
+				064B433F28C98EA8003EBAD4 /* SelectTransportScreenViewModel.swift in Sources */,
+				066161D028C94B01009799A5 /* SelectTransportScreenView.swift in Sources */,
+				066161D728C98665009799A5 /* SelectTransportTableViewCell.swift in Sources */,
 				069227E128C6DA1F00C3D716 /* ChatScreenCoordinator.swift in Sources */,
 				069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */,
 				069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */,
 				069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */,
 				062519F428C68AAB008605F1 /* AppDelegate.swift in Sources */,
 				069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */,
+				066161CE28C9239A009799A5 /* SelectTransportScreenCoordinator.swift in Sources */,
 				062519F628C68AAB008605F1 /* SceneDelegate.swift in Sources */,
+				066161CB28C92307009799A5 /* SelectTransportScreenViewController.swift in Sources */,
 				069227D028C6D86200C3D716 /* NotificationsScreenViewController.swift in Sources */,
 				069227E528C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift in Sources */,
 			);
