@@ -23,11 +23,13 @@ class HomeScreenViewController: UIViewController {
         self.homeScreenView.delegate(delegate: self)
     }
     
+    //Hide navigation back button
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
 
+    //Navigation protocol
 extension HomeScreenViewController: HomeScreenProtocol {
     func actionSecondBlackBox() {
         travelerNextScreen?()
