@@ -1,25 +1,28 @@
 //
-//  SelectTransportScreenView.swift
+//  VolumeSizeView.swift
 //  MuvverApp
 //
-//  Created by Lucas Pinto on 07/09/22.
+//  Created by Lucas Pinto on 09/09/22.
 //
+
+import Foundation
+
 
 import Foundation
 import UIKit
 
-protocol SelectTransportScreenViewProtocol: AnyObject {
+protocol VolumeSizeViewProtocol: AnyObject {
     func actionGreenButton()
 }
 
-final class SelectTransportScreenView: UIView {
+final class VolumeSizeView: UIView {
     
-    weak var delegate: SelectTransportScreenViewProtocol?
+    weak var delegate: VolumeSizeViewProtocol?
     
     //MARK: - Components
     
     lazy var blackTopGradient: BlackGradientNavigation = {
-        let grad = BlackGradientNavigation(frame: CGRect.zero, upperLabelText: "Viajante", lowerLabelText: "Qual será o meio de transporte da sua viagem?")
+        let grad = BlackGradientNavigation(frame: CGRect.zero, upperLabelText: "Ser um Moover", lowerLabelText: "O volume que você pode deslocar tem tamanho similar a que?")
         grad.translatesAutoresizingMaskIntoConstraints = false
         return grad
     }()
@@ -27,7 +30,7 @@ final class SelectTransportScreenView: UIView {
     lazy var tableViewLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Transporte"
+        label.text = "Tamanho"
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
@@ -35,7 +38,7 @@ final class SelectTransportScreenView: UIView {
     lazy var transportTableView: UITableView = {
         let tb = UITableView()
         tb.translatesAutoresizingMaskIntoConstraints = false
-        tb.register(SelectTransportTableViewCell.self, forCellReuseIdentifier: SelectTransportTableViewCell.identifier)
+        tb.register(VolumeSizeViewTableCell.self, forCellReuseIdentifier: VolumeSizeViewTableCell.identifier)
         return tb
     }()
     
@@ -78,7 +81,7 @@ final class SelectTransportScreenView: UIView {
     
     //green button
     
-    public func configDelegate(delegate: SelectTransportScreenViewProtocol?) {
+    public func configDelegate(delegate: VolumeSizeViewProtocol?) {
         self.delegate = delegate
     }
     

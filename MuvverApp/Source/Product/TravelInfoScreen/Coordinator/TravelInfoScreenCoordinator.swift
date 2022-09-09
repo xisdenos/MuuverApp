@@ -17,7 +17,20 @@ class TravelInfoScreenCoordinator: Coordinator {
     }
     
     func start() {
-        let vc: UIViewController = TravelInfoScreenViewController()
+        let vc = TravelInfoScreenViewController()
+        
+        //closure call
+        vc.volumeSizeNextScreen = {
+            self.startVolumeSizeScreen()
+        }
+        
         self.navigationController.pushViewController(vc, animated: true)
     }
+    
+    private func startVolumeSizeScreen() {
+        let coordinator: VolumeSizeCoordinator = VolumeSizeCoordinator(navigationController: self.navigationController)
+        coordinator.start()
+    }
 }
+
+

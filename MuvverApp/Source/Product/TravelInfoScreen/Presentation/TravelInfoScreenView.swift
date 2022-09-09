@@ -20,7 +20,7 @@ final class TravelInfoScreenView: UIView {
     //MARK: - Components
     
     lazy var blackTopGradient: BlackGradientNavigation = {
-        let grad = BlackGradientNavigation(frame: CGRect.zero, lowerLabelText: "Qual o trajeto da sua viagem?")
+        let grad = BlackGradientNavigation(frame: CGRect.zero, upperLabelText: "Viajante", lowerLabelText: "Qual o trajeto da sua viagem?")
         grad.translatesAutoresizingMaskIntoConstraints = false
         return grad
     }()
@@ -109,6 +109,7 @@ final class TravelInfoScreenView: UIView {
         let button = NextScreenGreenButton()
         button.isHidden = true
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(greenButtonTapped), for: .touchUpInside)
         return button
     }()
 
@@ -146,6 +147,10 @@ final class TravelInfoScreenView: UIView {
     
     public func configDelegate(delegate: TravelInfoScreenViewProtocol?) {
         self.delegate = delegate
+    }
+    
+    @objc private func greenButtonTapped() {
+        delegate?.actionGreenButton()
     }
     
     //MARK: - Validation receiver

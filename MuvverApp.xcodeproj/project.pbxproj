@@ -29,6 +29,11 @@
 		066AB34728CA93D200171CD5 /* TravelInfoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066AB34628CA93D200171CD5 /* TravelInfoScreenViewController.swift */; };
 		066AB34928CA99EF00171CD5 /* TravelInfoScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066AB34828CA99EF00171CD5 /* TravelInfoScreenView.swift */; };
 		06781B8728CAF55A00762024 /* TravelInfoScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06781B8628CAF55A00762024 /* TravelInfoScreenViewModel.swift */; };
+		06781B8C28CBE0C100762024 /* VolumeSizeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06781B8B28CBE0C100762024 /* VolumeSizeCoordinator.swift */; };
+		06781B8E28CBE0DD00762024 /* VolumeSizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06781B8D28CBE0DD00762024 /* VolumeSizeController.swift */; };
+		06781B9028CBE2DB00762024 /* VolumeSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06781B8F28CBE2DB00762024 /* VolumeSizeView.swift */; };
+		067CAA6A28CBEB4F001FE5C1 /* VolumeSizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CAA6928CBEB4F001FE5C1 /* VolumeSizeViewModel.swift */; };
+		067CAA6D28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CAA6C28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift */; };
 		069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BC28C6CB5700C3D716 /* Coordinator.swift */; };
 		069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */; };
 		069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227C128C6D67800C3D716 /* MenuTabBarController.swift */; };
@@ -94,6 +99,11 @@
 		066AB34628CA93D200171CD5 /* TravelInfoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoScreenViewController.swift; sourceTree = "<group>"; };
 		066AB34828CA99EF00171CD5 /* TravelInfoScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoScreenView.swift; sourceTree = "<group>"; };
 		06781B8628CAF55A00762024 /* TravelInfoScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoScreenViewModel.swift; sourceTree = "<group>"; };
+		06781B8B28CBE0C100762024 /* VolumeSizeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeCoordinator.swift; sourceTree = "<group>"; };
+		06781B8D28CBE0DD00762024 /* VolumeSizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeController.swift; sourceTree = "<group>"; };
+		06781B8F28CBE2DB00762024 /* VolumeSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeView.swift; sourceTree = "<group>"; };
+		067CAA6928CBEB4F001FE5C1 /* VolumeSizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeViewModel.swift; sourceTree = "<group>"; };
+		067CAA6C28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeViewTableCell.swift; sourceTree = "<group>"; };
 		069227BC28C6CB5700C3D716 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		069227C128C6D67800C3D716 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
@@ -290,6 +300,49 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		06781B8828CBE08D00762024 /* VolumeSizeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				06781B8A28CBE0A200762024 /* Presentation */,
+				06781B8928CBE09B00762024 /* Coordinator */,
+			);
+			path = VolumeSizeScreen;
+			sourceTree = "<group>";
+		};
+		06781B8928CBE09B00762024 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				06781B8B28CBE0C100762024 /* VolumeSizeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		06781B8A28CBE0A200762024 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				067CAA6B28CBECCC001FE5C1 /* Cell */,
+				06781B8D28CBE0DD00762024 /* VolumeSizeController.swift */,
+				06781B8F28CBE2DB00762024 /* VolumeSizeView.swift */,
+				067CAA6928CBEB4F001FE5C1 /* VolumeSizeViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		067CAA6B28CBECCC001FE5C1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				067CAA6C28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		067CAA6E28CBFC68001FE5C1 /* MinimumPriceScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MinimumPriceScreen;
+			sourceTree = "<group>";
+		};
 		069227B728C6CAD400C3D716 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +378,8 @@
 		069227BA28C6CB2500C3D716 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				067CAA6E28CBFC68001FE5C1 /* MinimumPriceScreen */,
+				06781B8828CBE08D00762024 /* VolumeSizeScreen */,
 				066AB34128CA932500171CD5 /* TravelInfoScreen */,
 				066161C828C922C7009799A5 /* SelectTransportScreen */,
 				069227C328C6D73400C3D716 /* HomeScreen */,
@@ -761,6 +816,7 @@
 				069227D228C6D88500C3D716 /* ChatScreenViewController.swift in Sources */,
 				062519FE28C68AAB008605F1 /* MuvverApp.xcdatamodeld in Sources */,
 				069227DF28C6D9EB00C3D716 /* NotificationsScreenCoordinator.swift in Sources */,
+				06781B9028CBE2DB00762024 /* VolumeSizeView.swift in Sources */,
 				069227D628C6D8BB00C3D716 /* DeliveriesScreenViewController.swift in Sources */,
 				060FAD1728CAD17300E66AB3 /* UISegmentedControl+Extension.swift in Sources */,
 				069227EB28C6F9F900C3D716 /* BlackBox.swift in Sources */,
@@ -769,10 +825,12 @@
 				066161D328C94EAF009799A5 /* BlackGradientNavigation.swift in Sources */,
 				069227D428C6D8AA00C3D716 /* RequestsScreenViewController.swift in Sources */,
 				066161D528C95C4A009799A5 /* NextScreenGreenButton.swift in Sources */,
+				067CAA6D28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift in Sources */,
 				069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */,
 				064B433F28C98EA8003EBAD4 /* SelectTransportScreenViewModel.swift in Sources */,
 				066161D028C94B01009799A5 /* SelectTransportScreenView.swift in Sources */,
 				06781B8728CAF55A00762024 /* TravelInfoScreenViewModel.swift in Sources */,
+				06781B8C28CBE0C100762024 /* VolumeSizeCoordinator.swift in Sources */,
 				066AB34528CA937B00171CD5 /* TravelInfoScreenCoordinator.swift in Sources */,
 				060FAD1C28CADFAE00E66AB3 /* TravelInfoDatePicker.swift in Sources */,
 				066161D728C98665009799A5 /* SelectTransportTableViewCell.swift in Sources */,
@@ -781,12 +839,14 @@
 				069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */,
 				069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */,
 				066AB34728CA93D200171CD5 /* TravelInfoScreenViewController.swift in Sources */,
+				06781B8E28CBE0DD00762024 /* VolumeSizeController.swift in Sources */,
 				062519F428C68AAB008605F1 /* AppDelegate.swift in Sources */,
 				069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */,
 				066161CE28C9239A009799A5 /* SelectTransportScreenCoordinator.swift in Sources */,
 				062519F628C68AAB008605F1 /* SceneDelegate.swift in Sources */,
 				066161CB28C92307009799A5 /* SelectTransportScreenViewController.swift in Sources */,
 				069227D028C6D86200C3D716 /* NotificationsScreenViewController.swift in Sources */,
+				067CAA6A28CBEB4F001FE5C1 /* VolumeSizeViewModel.swift in Sources */,
 				060FAD1E28CAE0BC00E66AB3 /* CustomTF.swift in Sources */,
 				069227E528C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift in Sources */,
 			);
