@@ -9,9 +9,10 @@ import Foundation
 import UIKit
 
 class SelectTransportScreenViewController: UIViewController {
-
+    
     var selectTransportScreenView: SelectTransportScreenView = SelectTransportScreenView()
     var viewModel: SelectTransportScreenViewModel = SelectTransportScreenViewModel()
+    var tavelInfoNextScreen: (() -> Void)?
     
     override func loadView() {
         self.view = selectTransportScreenView
@@ -20,6 +21,7 @@ class SelectTransportScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         selectTransportScreenView.setTableViewDelegates(delegate: self, dataSource: self)
+        selectTransportScreenView.configDelegate(delegate: self)
     }
     
     //Hide navigation back button
@@ -28,6 +30,8 @@ class SelectTransportScreenViewController: UIViewController {
     }
 }
 
+
+//MARK: - TableView configuration
 extension SelectTransportScreenViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,6 +56,12 @@ extension SelectTransportScreenViewController: UITableViewDelegate, UITableViewD
         viewModel.selectVehicle(transportNumber: indexPath.row)
         selectTransportScreenView.transportTableView.reloadData()
     }
-    
-    
+}
+
+//MARK: - Next screen configuration
+
+extension SelectTransportScreenViewController: SelectTransportScreenViewProtocol {
+    func actionGreenButton() {
+        tavelInfoNextScreen?()
+    }
 }

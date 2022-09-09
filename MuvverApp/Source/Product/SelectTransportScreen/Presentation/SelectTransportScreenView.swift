@@ -8,12 +8,18 @@
 import Foundation
 import UIKit
 
+protocol SelectTransportScreenViewProtocol: AnyObject {
+    func actionGreenButton()
+}
+
 final class SelectTransportScreenView: UIView {
+    
+    weak var delegate: SelectTransportScreenViewProtocol?
     
     //MARK: - Components
     
     lazy var blackTopGradient: BlackGradientNavigation = {
-        let grad = BlackGradientNavigation()
+        let grad = BlackGradientNavigation(frame: CGRect.zero, lowerLabelText: "Qual será o meio de transporte da sua viagem?")
         grad.translatesAutoresizingMaskIntoConstraints = false
         return grad
     }()
@@ -37,6 +43,7 @@ final class SelectTransportScreenView: UIView {
         let button = NextScreenGreenButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isHidden = true
+        button.addTarget(self, action: #selector(greenButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -56,12 +63,23 @@ final class SelectTransportScreenView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Objs functions
     
-    //MARK: - TableView delegate
+    @objc private func greenButtonTapped() {
+        delegate?.actionGreenButton()
+    }
     
+    //MARK: - delegates
+    //tableview
     public func setTableViewDelegates(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
         transportTableView.delegate = delegate
         transportTableView.dataSource = dataSource
+    }
+    
+    //green button
+    
+    public func configDelegate(delegate: SelectTransportScreenViewProtocol?) {
+        self.delegate = delegate
     }
     
     //MARK: - Constraints

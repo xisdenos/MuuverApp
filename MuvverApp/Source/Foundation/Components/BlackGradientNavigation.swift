@@ -67,11 +67,12 @@ class BlackGradientNavigation: UIView {
     }()
     
     //MARK: - Initializer
-    override init(frame: CGRect) {
+    init(frame: CGRect, lowerLabelText: String) {
         super.init(frame: frame)
         addSubview(gradient)
         addSubview(stackView)
         addSubview(lowerLabel)
+        lowerLabel.text = lowerLabelText
         configContraints()
     }
     
