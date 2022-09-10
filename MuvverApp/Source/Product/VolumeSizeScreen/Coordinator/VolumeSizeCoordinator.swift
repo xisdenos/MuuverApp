@@ -17,7 +17,17 @@ class VolumeSizeCoordinator: Coordinator {
     }
     
     func start() {
-        let vc: UIViewController = VolumeSizeController()
+        let vc = VolumeSizeController()
+        
+        vc.minimumPriceNextScreen = {
+            self.startVolumeSizeScreen()
+        }
+        
         self.navigationController.pushViewController(vc, animated: true)
+    }
+    
+    private func startVolumeSizeScreen() {
+        let coordinator: MinimumPriceCoordinator = MinimumPriceCoordinator(navigationController: self.navigationController)
+        coordinator.start()
     }
 }

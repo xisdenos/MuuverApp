@@ -34,6 +34,9 @@
 		06781B9028CBE2DB00762024 /* VolumeSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06781B8F28CBE2DB00762024 /* VolumeSizeView.swift */; };
 		067CAA6A28CBEB4F001FE5C1 /* VolumeSizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CAA6928CBEB4F001FE5C1 /* VolumeSizeViewModel.swift */; };
 		067CAA6D28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CAA6C28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift */; };
+		067CAA7128CC13B2001FE5C1 /* MinimumPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CAA7028CC13B2001FE5C1 /* MinimumPriceViewController.swift */; };
+		067CAA7428CC1410001FE5C1 /* MinimumPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CAA7328CC1410001FE5C1 /* MinimumPriceView.swift */; };
+		067CAA7728CC1554001FE5C1 /* MinimumPriceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CAA7628CC1554001FE5C1 /* MinimumPriceCoordinator.swift */; };
 		069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BC28C6CB5700C3D716 /* Coordinator.swift */; };
 		069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */; };
 		069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227C128C6D67800C3D716 /* MenuTabBarController.swift */; };
@@ -104,6 +107,9 @@
 		06781B8F28CBE2DB00762024 /* VolumeSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeView.swift; sourceTree = "<group>"; };
 		067CAA6928CBEB4F001FE5C1 /* VolumeSizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeViewModel.swift; sourceTree = "<group>"; };
 		067CAA6C28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeViewTableCell.swift; sourceTree = "<group>"; };
+		067CAA7028CC13B2001FE5C1 /* MinimumPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumPriceViewController.swift; sourceTree = "<group>"; };
+		067CAA7328CC1410001FE5C1 /* MinimumPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumPriceView.swift; sourceTree = "<group>"; };
+		067CAA7628CC1554001FE5C1 /* MinimumPriceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumPriceCoordinator.swift; sourceTree = "<group>"; };
 		069227BC28C6CB5700C3D716 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		069227C128C6D67800C3D716 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
@@ -339,8 +345,27 @@
 		067CAA6E28CBFC68001FE5C1 /* MinimumPriceScreen */ = {
 			isa = PBXGroup;
 			children = (
+				067CAA7528CC1536001FE5C1 /* Coordinator */,
+				067CAA6F28CC139D001FE5C1 /* Presentation */,
 			);
 			path = MinimumPriceScreen;
+			sourceTree = "<group>";
+		};
+		067CAA6F28CC139D001FE5C1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				067CAA7028CC13B2001FE5C1 /* MinimumPriceViewController.swift */,
+				067CAA7328CC1410001FE5C1 /* MinimumPriceView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		067CAA7528CC1536001FE5C1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				067CAA7628CC1554001FE5C1 /* MinimumPriceCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		069227B728C6CAD400C3D716 /* App */ = {
@@ -823,6 +848,7 @@
 				066AB34928CA99EF00171CD5 /* TravelInfoScreenView.swift in Sources */,
 				069227CE28C6D82500C3D716 /* HomeScreenViewController.swift in Sources */,
 				066161D328C94EAF009799A5 /* BlackGradientNavigation.swift in Sources */,
+				067CAA7728CC1554001FE5C1 /* MinimumPriceCoordinator.swift in Sources */,
 				069227D428C6D8AA00C3D716 /* RequestsScreenViewController.swift in Sources */,
 				066161D528C95C4A009799A5 /* NextScreenGreenButton.swift in Sources */,
 				067CAA6D28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift in Sources */,
@@ -830,7 +856,9 @@
 				064B433F28C98EA8003EBAD4 /* SelectTransportScreenViewModel.swift in Sources */,
 				066161D028C94B01009799A5 /* SelectTransportScreenView.swift in Sources */,
 				06781B8728CAF55A00762024 /* TravelInfoScreenViewModel.swift in Sources */,
+				067CAA7428CC1410001FE5C1 /* MinimumPriceView.swift in Sources */,
 				06781B8C28CBE0C100762024 /* VolumeSizeCoordinator.swift in Sources */,
+				067CAA7128CC13B2001FE5C1 /* MinimumPriceViewController.swift in Sources */,
 				066AB34528CA937B00171CD5 /* TravelInfoScreenCoordinator.swift in Sources */,
 				060FAD1C28CADFAE00E66AB3 /* TravelInfoDatePicker.swift in Sources */,
 				066161D728C98665009799A5 /* SelectTransportTableViewCell.swift in Sources */,

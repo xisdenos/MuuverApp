@@ -12,6 +12,7 @@ class VolumeSizeController: UIViewController{
    
     var volumeSizeView: VolumeSizeView = VolumeSizeView()
     var viewModel: VolumeSizeViewModel = VolumeSizeViewModel()
+    var minimumPriceNextScreen: (() -> Void)?
     
     override func loadView() {
         view = volumeSizeView
@@ -61,7 +62,7 @@ extension VolumeSizeController: UITableViewDelegate, UITableViewDataSource {
 
 extension VolumeSizeController: VolumeSizeViewProtocol {
     func actionGreenButton() {
-        
+        minimumPriceNextScreen?()
     }
 }
 
