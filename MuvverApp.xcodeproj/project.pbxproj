@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060FAD1728CAD17300E66AB3 /* UISegmentedControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060FAD1628CAD17300E66AB3 /* UISegmentedControl+Extension.swift */; };
+		060FAD1C28CADFAE00E66AB3 /* TravelInfoDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060FAD1B28CADFAE00E66AB3 /* TravelInfoDatePicker.swift */; };
+		060FAD1E28CAE0BC00E66AB3 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060FAD1D28CAE0BC00E66AB3 /* CustomTF.swift */; };
 		062519F428C68AAB008605F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062519F328C68AAB008605F1 /* AppDelegate.swift */; };
 		062519F628C68AAB008605F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062519F528C68AAB008605F1 /* SceneDelegate.swift */; };
 		062519FE28C68AAB008605F1 /* MuvverApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 062519FC28C68AAB008605F1 /* MuvverApp.xcdatamodeld */; };
@@ -22,6 +25,15 @@
 		066161D328C94EAF009799A5 /* BlackGradientNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */; };
 		066161D528C95C4A009799A5 /* NextScreenGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D428C95C4A009799A5 /* NextScreenGreenButton.swift */; };
 		066161D728C98665009799A5 /* SelectTransportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066161D628C98665009799A5 /* SelectTransportTableViewCell.swift */; };
+		066AB34528CA937B00171CD5 /* TravelInfoScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066AB34428CA937B00171CD5 /* TravelInfoScreenCoordinator.swift */; };
+		066AB34728CA93D200171CD5 /* TravelInfoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066AB34628CA93D200171CD5 /* TravelInfoScreenViewController.swift */; };
+		066AB34928CA99EF00171CD5 /* TravelInfoScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066AB34828CA99EF00171CD5 /* TravelInfoScreenView.swift */; };
+		06781B8728CAF55A00762024 /* TravelInfoScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06781B8628CAF55A00762024 /* TravelInfoScreenViewModel.swift */; };
+		06781B8C28CBE0C100762024 /* VolumeSizeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06781B8B28CBE0C100762024 /* VolumeSizeCoordinator.swift */; };
+		06781B8E28CBE0DD00762024 /* VolumeSizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06781B8D28CBE0DD00762024 /* VolumeSizeController.swift */; };
+		06781B9028CBE2DB00762024 /* VolumeSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06781B8F28CBE2DB00762024 /* VolumeSizeView.swift */; };
+		067CAA6A28CBEB4F001FE5C1 /* VolumeSizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CAA6928CBEB4F001FE5C1 /* VolumeSizeViewModel.swift */; };
+		067CAA6D28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CAA6C28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift */; };
 		069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BC28C6CB5700C3D716 /* Coordinator.swift */; };
 		069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */; };
 		069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227C128C6D67800C3D716 /* MenuTabBarController.swift */; };
@@ -38,6 +50,9 @@
 		069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227E728C6E2F800C3D716 /* HomeScreenView.swift */; };
 		069227EB28C6F9F900C3D716 /* BlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227EA28C6F9F900C3D716 /* BlackBox.swift */; };
 		069227ED28C6FB3F00C3D716 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069227EC28C6FB3F00C3D716 /* GradientView.swift */; };
+		127CA7E7333519C9A39A3E1F /* Pods_MuvverApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FC4B3108F77A3BEA1D1836 /* Pods_MuvverApp.framework */; };
+		60DEF94E0E1F45EAF150E3E3 /* Pods_MuvverAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10C83A850A5792B009C3A71 /* Pods_MuvverAppTests.framework */; };
+		673BDE2511C286CBC32696DA /* Pods_MuvverApp_MuvverAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162599B618254FED6A7C6CF4 /* Pods_MuvverApp_MuvverAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +73,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060FAD1628CAD17300E66AB3 /* UISegmentedControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extension.swift"; sourceTree = "<group>"; };
+		060FAD1B28CADFAE00E66AB3 /* TravelInfoDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoDatePicker.swift; sourceTree = "<group>"; };
+		060FAD1D28CAE0BC00E66AB3 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
 		062519F028C68AAB008605F1 /* MuvverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuvverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062519F328C68AAB008605F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		062519F528C68AAB008605F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +95,15 @@
 		066161D228C94EAF009799A5 /* BlackGradientNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackGradientNavigation.swift; sourceTree = "<group>"; };
 		066161D428C95C4A009799A5 /* NextScreenGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScreenGreenButton.swift; sourceTree = "<group>"; };
 		066161D628C98665009799A5 /* SelectTransportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransportTableViewCell.swift; sourceTree = "<group>"; };
+		066AB34428CA937B00171CD5 /* TravelInfoScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoScreenCoordinator.swift; sourceTree = "<group>"; };
+		066AB34628CA93D200171CD5 /* TravelInfoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoScreenViewController.swift; sourceTree = "<group>"; };
+		066AB34828CA99EF00171CD5 /* TravelInfoScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoScreenView.swift; sourceTree = "<group>"; };
+		06781B8628CAF55A00762024 /* TravelInfoScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoScreenViewModel.swift; sourceTree = "<group>"; };
+		06781B8B28CBE0C100762024 /* VolumeSizeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeCoordinator.swift; sourceTree = "<group>"; };
+		06781B8D28CBE0DD00762024 /* VolumeSizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeController.swift; sourceTree = "<group>"; };
+		06781B8F28CBE2DB00762024 /* VolumeSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeView.swift; sourceTree = "<group>"; };
+		067CAA6928CBEB4F001FE5C1 /* VolumeSizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeViewModel.swift; sourceTree = "<group>"; };
+		067CAA6C28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSizeViewTableCell.swift; sourceTree = "<group>"; };
 		069227BC28C6CB5700C3D716 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		069227BF28C6D61500C3D716 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		069227C128C6D67800C3D716 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
@@ -93,6 +120,15 @@
 		069227E728C6E2F800C3D716 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		069227EA28C6F9F900C3D716 /* BlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBox.swift; sourceTree = "<group>"; };
 		069227EC28C6FB3F00C3D716 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		162599B618254FED6A7C6CF4 /* Pods_MuvverApp_MuvverAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuvverApp_MuvverAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1768F857B3E8CD945A6D6454 /* Pods-MuvverApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuvverApp.release.xcconfig"; path = "Target Support Files/Pods-MuvverApp/Pods-MuvverApp.release.xcconfig"; sourceTree = "<group>"; };
+		19FC4B3108F77A3BEA1D1836 /* Pods_MuvverApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuvverApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A790427B6B87768E230A7C9 /* Pods-MuvverApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuvverApp.debug.xcconfig"; path = "Target Support Files/Pods-MuvverApp/Pods-MuvverApp.debug.xcconfig"; sourceTree = "<group>"; };
+		77CF533FFCEA40F8A64898F9 /* Pods-MuvverAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuvverAppTests.release.xcconfig"; path = "Target Support Files/Pods-MuvverAppTests/Pods-MuvverAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		81CA99B271C00EC3491F36B0 /* Pods-MuvverApp-MuvverAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuvverApp-MuvverAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MuvverApp-MuvverAppUITests/Pods-MuvverApp-MuvverAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		89C95C4CFFB31F17B1C62913 /* Pods-MuvverApp-MuvverAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuvverApp-MuvverAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MuvverApp-MuvverAppUITests/Pods-MuvverApp-MuvverAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E10C83A850A5792B009C3A71 /* Pods_MuvverAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuvverAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D042B876B3BA86676F8F66 /* Pods-MuvverAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuvverAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MuvverAppTests/Pods-MuvverAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127CA7E7333519C9A39A3E1F /* Pods_MuvverApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DEF94E0E1F45EAF150E3E3 /* Pods_MuvverAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +152,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673BDE2511C286CBC32696DA /* Pods_MuvverApp_MuvverAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		060FAD1528CAD15900E66AB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				060FAD1628CAD17300E66AB3 /* UISegmentedControl+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		060FAD1828CADF7600E66AB3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				060FAD1B28CADFAE00E66AB3 /* TravelInfoDatePicker.swift */,
+				060FAD1D28CAE0BC00E66AB3 /* CustomTF.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		062519E728C68AAB008605F1 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +183,8 @@
 				06251A0C28C68AAC008605F1 /* MuvverAppTests */,
 				06251A1628C68AAC008605F1 /* MuvverAppUITests */,
 				062519F128C68AAB008605F1 /* Products */,
+				F8CD1ECBFDF225FBC7A6515F /* Pods */,
+				1547728A1698EE743BF6B34D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,6 +272,77 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		066AB34128CA932500171CD5 /* TravelInfoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				060FAD1828CADF7600E66AB3 /* Components */,
+				066AB34328CA936900171CD5 /* Coordinator */,
+				066AB34228CA936000171CD5 /* Presentation */,
+			);
+			path = TravelInfoScreen;
+			sourceTree = "<group>";
+		};
+		066AB34228CA936000171CD5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				066AB34628CA93D200171CD5 /* TravelInfoScreenViewController.swift */,
+				066AB34828CA99EF00171CD5 /* TravelInfoScreenView.swift */,
+				06781B8628CAF55A00762024 /* TravelInfoScreenViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		066AB34328CA936900171CD5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				066AB34428CA937B00171CD5 /* TravelInfoScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		06781B8828CBE08D00762024 /* VolumeSizeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				06781B8A28CBE0A200762024 /* Presentation */,
+				06781B8928CBE09B00762024 /* Coordinator */,
+			);
+			path = VolumeSizeScreen;
+			sourceTree = "<group>";
+		};
+		06781B8928CBE09B00762024 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				06781B8B28CBE0C100762024 /* VolumeSizeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		06781B8A28CBE0A200762024 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				067CAA6B28CBECCC001FE5C1 /* Cell */,
+				06781B8D28CBE0DD00762024 /* VolumeSizeController.swift */,
+				06781B8F28CBE2DB00762024 /* VolumeSizeView.swift */,
+				067CAA6928CBEB4F001FE5C1 /* VolumeSizeViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		067CAA6B28CBECCC001FE5C1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				067CAA6C28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		067CAA6E28CBFC68001FE5C1 /* MinimumPriceScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MinimumPriceScreen;
+			sourceTree = "<group>";
+		};
 		069227B728C6CAD400C3D716 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +366,7 @@
 		069227B928C6CB1D00C3D716 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				060FAD1528CAD15900E66AB3 /* Extensions */,
 				066161D128C94CF7009799A5 /* Components */,
 				069227E628C6E19500C3D716 /* UnusedBarItems */,
 				069227BE28C6D5FF00C3D716 /* TabBar */,
@@ -248,6 +378,9 @@
 		069227BA28C6CB2500C3D716 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				067CAA6E28CBFC68001FE5C1 /* MinimumPriceScreen */,
+				06781B8828CBE08D00762024 /* VolumeSizeScreen */,
+				066AB34128CA932500171CD5 /* TravelInfoScreen */,
 				066161C828C922C7009799A5 /* SelectTransportScreen */,
 				069227C328C6D73400C3D716 /* HomeScreen */,
 			);
@@ -417,6 +550,29 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		1547728A1698EE743BF6B34D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19FC4B3108F77A3BEA1D1836 /* Pods_MuvverApp.framework */,
+				162599B618254FED6A7C6CF4 /* Pods_MuvverApp_MuvverAppUITests.framework */,
+				E10C83A850A5792B009C3A71 /* Pods_MuvverAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8CD1ECBFDF225FBC7A6515F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A790427B6B87768E230A7C9 /* Pods-MuvverApp.debug.xcconfig */,
+				1768F857B3E8CD945A6D6454 /* Pods-MuvverApp.release.xcconfig */,
+				81CA99B271C00EC3491F36B0 /* Pods-MuvverApp-MuvverAppUITests.debug.xcconfig */,
+				89C95C4CFFB31F17B1C62913 /* Pods-MuvverApp-MuvverAppUITests.release.xcconfig */,
+				F5D042B876B3BA86676F8F66 /* Pods-MuvverAppTests.debug.xcconfig */,
+				77CF533FFCEA40F8A64898F9 /* Pods-MuvverAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -424,9 +580,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06251A1D28C68AAC008605F1 /* Build configuration list for PBXNativeTarget "MuvverApp" */;
 			buildPhases = (
+				7E42C7EC8FE2057F408E2030 /* [CP] Check Pods Manifest.lock */,
 				062519EC28C68AAB008605F1 /* Sources */,
 				062519ED28C68AAB008605F1 /* Frameworks */,
 				062519EE28C68AAB008605F1 /* Resources */,
+				41E42FB2B09FB7520C4DF13F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -441,6 +599,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06251A2028C68AAC008605F1 /* Build configuration list for PBXNativeTarget "MuvverAppTests" */;
 			buildPhases = (
+				6BEA71800900A058B18BA3CB /* [CP] Check Pods Manifest.lock */,
 				06251A0528C68AAC008605F1 /* Sources */,
 				06251A0628C68AAC008605F1 /* Frameworks */,
 				06251A0728C68AAC008605F1 /* Resources */,
@@ -459,9 +618,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06251A2328C68AAC008605F1 /* Build configuration list for PBXNativeTarget "MuvverAppUITests" */;
 			buildPhases = (
+				B320810C026092CE00386A8E /* [CP] Check Pods Manifest.lock */,
 				06251A0F28C68AAC008605F1 /* Sources */,
 				06251A1028C68AAC008605F1 /* Frameworks */,
 				06251A1128C68AAC008605F1 /* Resources */,
+				2DF49D68F20241EA9E63A85E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -542,6 +703,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DF49D68F20241EA9E63A85E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuvverApp-MuvverAppUITests/Pods-MuvverApp-MuvverAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuvverApp-MuvverAppUITests/Pods-MuvverApp-MuvverAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MuvverApp-MuvverAppUITests/Pods-MuvverApp-MuvverAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41E42FB2B09FB7520C4DF13F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuvverApp/Pods-MuvverApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuvverApp/Pods-MuvverApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MuvverApp/Pods-MuvverApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BEA71800900A058B18BA3CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuvverAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E42C7EC8FE2057F408E2030 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuvverApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B320810C026092CE00386A8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuvverApp-MuvverAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		062519EC28C68AAB008605F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -552,26 +816,38 @@
 				069227D228C6D88500C3D716 /* ChatScreenViewController.swift in Sources */,
 				062519FE28C68AAB008605F1 /* MuvverApp.xcdatamodeld in Sources */,
 				069227DF28C6D9EB00C3D716 /* NotificationsScreenCoordinator.swift in Sources */,
+				06781B9028CBE2DB00762024 /* VolumeSizeView.swift in Sources */,
 				069227D628C6D8BB00C3D716 /* DeliveriesScreenViewController.swift in Sources */,
+				060FAD1728CAD17300E66AB3 /* UISegmentedControl+Extension.swift in Sources */,
 				069227EB28C6F9F900C3D716 /* BlackBox.swift in Sources */,
+				066AB34928CA99EF00171CD5 /* TravelInfoScreenView.swift in Sources */,
 				069227CE28C6D82500C3D716 /* HomeScreenViewController.swift in Sources */,
 				066161D328C94EAF009799A5 /* BlackGradientNavigation.swift in Sources */,
 				069227D428C6D8AA00C3D716 /* RequestsScreenViewController.swift in Sources */,
 				066161D528C95C4A009799A5 /* NextScreenGreenButton.swift in Sources */,
+				067CAA6D28CBECF9001FE5C1 /* VolumeSizeViewTableCell.swift in Sources */,
 				069227E828C6E2F900C3D716 /* HomeScreenView.swift in Sources */,
 				064B433F28C98EA8003EBAD4 /* SelectTransportScreenViewModel.swift in Sources */,
 				066161D028C94B01009799A5 /* SelectTransportScreenView.swift in Sources */,
+				06781B8728CAF55A00762024 /* TravelInfoScreenViewModel.swift in Sources */,
+				06781B8C28CBE0C100762024 /* VolumeSizeCoordinator.swift in Sources */,
+				066AB34528CA937B00171CD5 /* TravelInfoScreenCoordinator.swift in Sources */,
+				060FAD1C28CADFAE00E66AB3 /* TravelInfoDatePicker.swift in Sources */,
 				066161D728C98665009799A5 /* SelectTransportTableViewCell.swift in Sources */,
 				069227E128C6DA1F00C3D716 /* ChatScreenCoordinator.swift in Sources */,
 				069227C028C6D61500C3D716 /* TabBarCoordinator.swift in Sources */,
 				069227E328C6DA7A00C3D716 /* RequestsScreenCoordinator.swift in Sources */,
 				069227BD28C6CB5700C3D716 /* Coordinator.swift in Sources */,
+				066AB34728CA93D200171CD5 /* TravelInfoScreenViewController.swift in Sources */,
+				06781B8E28CBE0DD00762024 /* VolumeSizeController.swift in Sources */,
 				062519F428C68AAB008605F1 /* AppDelegate.swift in Sources */,
 				069227C228C6D67800C3D716 /* MenuTabBarController.swift in Sources */,
 				066161CE28C9239A009799A5 /* SelectTransportScreenCoordinator.swift in Sources */,
 				062519F628C68AAB008605F1 /* SceneDelegate.swift in Sources */,
 				066161CB28C92307009799A5 /* SelectTransportScreenViewController.swift in Sources */,
 				069227D028C6D86200C3D716 /* NotificationsScreenViewController.swift in Sources */,
+				067CAA6A28CBEB4F001FE5C1 /* VolumeSizeViewModel.swift in Sources */,
+				060FAD1E28CAE0BC00E66AB3 /* CustomTF.swift in Sources */,
 				069227E528C6DA9E00C3D716 /* DeliveriesScreenCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,6 +1012,7 @@
 		};
 		06251A1E28C68AAC008605F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A790427B6B87768E230A7C9 /* Pods-MuvverApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -764,6 +1041,7 @@
 		};
 		06251A1F28C68AAC008605F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1768F857B3E8CD945A6D6454 /* Pods-MuvverApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -792,6 +1070,7 @@
 		};
 		06251A2128C68AAC008605F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D042B876B3BA86676F8F66 /* Pods-MuvverAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -812,6 +1091,7 @@
 		};
 		06251A2228C68AAC008605F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CF533FFCEA40F8A64898F9 /* Pods-MuvverAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -832,6 +1112,7 @@
 		};
 		06251A2428C68AAC008605F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81CA99B271C00EC3491F36B0 /* Pods-MuvverApp-MuvverAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -850,6 +1131,7 @@
 		};
 		06251A2528C68AAC008605F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C95C4CFFB31F17B1C62913 /* Pods-MuvverApp-MuvverAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

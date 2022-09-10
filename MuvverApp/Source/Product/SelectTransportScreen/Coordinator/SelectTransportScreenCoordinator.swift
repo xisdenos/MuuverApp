@@ -17,7 +17,17 @@ class SelectTransportScreenCordinator: Coordinator {
     }
     
     func start() {
-        let viewController: UIViewController = SelectTransportScreenViewController()
+        let viewController = SelectTransportScreenViewController()
+        
+        //closure call
+        viewController.tavelInfoNextScreen = {
+            self.startTraveInfoScreen()
+        }
         self.navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func startTraveInfoScreen() {
+        let coordinator: TravelInfoScreenCoordinator = TravelInfoScreenCoordinator(navigationController: self.navigationController)
+        coordinator.start()
     }
 }

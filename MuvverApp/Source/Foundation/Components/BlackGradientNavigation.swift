@@ -61,17 +61,19 @@ class BlackGradientNavigation: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Qual será o meio de transporte da sua viagem?"
         label.textColor = UIColor(white: 1, alpha: 1)
-        label.font = UIFont.systemFont(ofSize: 22)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.numberOfLines = 0
         return label
     }()
     
     //MARK: - Initializer
-    override init(frame: CGRect) {
+    init(frame: CGRect, upperLabelText: String, lowerLabelText: String) {
         super.init(frame: frame)
         addSubview(gradient)
         addSubview(stackView)
         addSubview(lowerLabel)
+        lowerLabel.text = lowerLabelText
+        centralLabel.text = upperLabelText
         configContraints()
     }
     
