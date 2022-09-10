@@ -17,6 +17,16 @@ class MinimumPriceViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        
+        minimumPriceView.configTextFieldDelegate(delegate: self)
+    }
+}
+
+extension MinimumPriceViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        minimumPriceView.priceSlider.value = CGFloat((minimumPriceView.priceTextField.text! as NSString).doubleValue)
     }
 }
